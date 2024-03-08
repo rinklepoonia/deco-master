@@ -24,9 +24,14 @@
     --fc-black: #000000;
     --fc-darkpink: #8A3E74;
     --fc-green: #008000;
+    --fc-black70: #4D4D4D;
     /* ===========bg-color=========== */
     --bg-green: #D2DA60;
     --bg-layerblack: #00000099;
+}
+
+.color-black70 {
+    color: var(--fc-black70);
 }
 
 .color-darkpink {
@@ -223,7 +228,8 @@
 
 /* ==============why-choose-us============ */
 .py_115 {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .choose_small_iconsboxes {
@@ -370,6 +376,27 @@
     margin-top: 42px;
 }
 
+/* =============welcom============ */
+
+.max-w-648 {
+    max-width: 648px;
+}
+
+.gap_33 {
+    row-gap: 33px;
+}
+
+.welcom-elli2-posi {
+    bottom: 10%;
+    right: 0;
+}
+
+
+
+.border_radius_23 {
+    border-radius: 23px;
+}
+
 @media (max-width:992px) {
     .overFlowHidden {
         overflow: hidden;
@@ -435,9 +462,10 @@
         line-height: 72px;
     }
 
-    .py_115 {
-        padding: 50px 0;
-    }
+    /* .py_115 {
+        padding-top: 115px;
+        padding-bottom: 115px;
+    } */
 
 }
 
@@ -447,7 +475,8 @@
     }
 
     .py_115 {
-        padding: 80px 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     :root {
@@ -476,12 +505,23 @@
         margin: 92px 0 92px 0;
     }
 
+    .pt_66 {
+        padding-top: 66px;
+    }
+
     .py_115 {
-        padding: 115px 0;
+        padding-top: 115px;
+        padding-bottom: 115px;
     }
 
     .border_gallery {
         padding: 0;
+    }
+}
+
+@media (min-width:1200px) {
+    .max-w-647 {
+        max-width: 647px;
     }
 }
 
