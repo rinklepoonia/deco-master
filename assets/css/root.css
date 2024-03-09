@@ -1,0 +1,49 @@
+  :root {
+      --fs-s: 18px;
+      --fs-ss: 20px;
+      --fs-sm: 21px;
+      --fs-md: 24px;
+      --fs-lg: 36px;
+      --fs-xl: 30px;
+      --fs-2xl: 64px;
+      --fs-3xl: 144px;
+  }
+
+  @media (min-width:576px) {
+      :root {
+          /* --fs-s: 18px; */
+          /* --fs-ss: 20px; */
+          /* --fs-sm: 21px; */
+          /* --fs-md: 24px; */
+          /* --fs-lg: 36px; */
+          /* --fs-xl: 48px; */
+          /* --fs-2xl: 64px; */
+          /* --fs-3xl: 144px; */
+      }
+  }
+
+  @media (min-width:768px) {
+      :root {
+          /* --fs-s: 18px; */
+          /* --fs-ss: 20px; */
+          /* --fs-sm: 21px; */
+          /* --fs-md: 24px; */
+          --fs-lg: 36px;
+          --fs-xl: 40px;
+          /* --fs-2xl: 64px; */
+          /* --fs-3xl: 144px; */
+      }
+  }
+
+  @media (min-width:992px) {
+      :root {
+          /* --fs-s: 18px; */
+          /* --fs-ss: 20px; */
+          /* --fs-sm: 21px; */
+          /* --fs-md: 24px; */
+          /* --fs-lg: 36px; */
+          --fs-xl: 48px;
+          /* --fs-2xl: 64px; */
+          /* --fs-3xl: 144px; */
+      }
+  }
