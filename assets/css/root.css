@@ -6,7 +6,7 @@
       --fs-lg: 36px;
       --fs-xl: 20px;
       --fs-2xl: 30px;
-      --fs-3xl: 144px;
+      --fs-3xl: 100px;
   }
 
   @media (min-width:576px) {
@@ -39,6 +39,7 @@
       :root {
           --fs-xl: 35px;
           --fs-2xl: 64px;
+          --fs-3xl: 144px;
       }
   }
 

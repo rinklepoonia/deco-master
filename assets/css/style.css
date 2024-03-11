@@ -18,10 +18,13 @@
     --fc-green: #008000;
     --fc-black70: #4D4D4D;
     --fc-blue: #010080;
+
     /* ===========bg-color=========== */
     --bg-green: #D2DA60;
     --bg-layerblack: #00000099;
     --bg-boxbg: #EEEEEE;
+    --bg-newbox-bg: #F0F0F0;
+    --bg-footerIcongrey: #444444;
 }
 
 .color-black70 {
@@ -140,7 +143,7 @@
 }
 
 .lh-216 {
-    line-height: 216px;
+    line-height: 190px;
 }
 
 /* ==================margin============ */
@@ -536,6 +539,92 @@
     max-width: 423px;
 }
 
+/* =================testimonials=============== */
+.max_w_292 {
+    max-width: 292px;
+}
+
+.color_grident {
+    background: linear-gradient(90deg, #9104E5 0%, #F93B96 96.47%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+}
+
+.news_box {
+    width: 100%;
+    max-width: 1320px;
+    height: 394px;
+    background: var(--bg-newbox-bg);
+    border-radius: 45px;
+    z-index: -1;
+    margin-top: 223px;
+}
+
+.mail_box {
+    background: var(--fc-white);
+    border: transparent;
+    outline: transparent;
+    max-width: 672px;
+    /* width: 100%; */
+    padding: 22px 40px 22px 40px;
+
+}
+
+.mail_btn {
+    padding: 24px 49px;
+    background: var(--fc-blue);
+    border: transparent;
+}
+
+.news_text_position {
+    top: -27%;
+}
+
+/* ================footer============== */
+.row_gap {
+    row-gap: 40px;
+}
+
+.border_bottom {
+    border: 1px solid #FFFFFF;
+}
+
+.pt_54 {
+    padding-top: 54px;
+}
+
+.py_26 {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.mb_14 {
+    margin-bottom: 14px;
+}
+
+.mb_24 {
+    margin-bottom: 24px;
+}
+
+.footer_iconBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-footerIcongrey);
+    transition: all 300ms linear;
+}
+
+.footer_iconBox:hover {
+    transform: scale(1.1);
+    background: var(--fc-white);
+    box-shadow: 3px 3px 15px -2px var(--fc-white);
+}
+
+.footer_iconBox:hover svg path {
+    fill: var(--bg-footerIcongrey);
+}
 
 @media (max-width:992px) {
     .overFlowHidden {
@@ -642,6 +731,10 @@
         margin: 92px 0 92px 0;
     }
 
+    .mt_67 {
+        margin-top: 67px;
+    }
+
     .pt_66 {
         padding-top: 66px;
     }
@@ -678,6 +771,10 @@
     .our_servise_box3 {
         min-height: 368px;
     }
+
+    .mail_box {
+        padding: 22px 369px 22px 40px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -710,8 +807,11 @@
     }
 
     .servise_box_position3 {
-        /* top: 15%; */
         top: 20%;
+    }
+
+    .lh-216 {
+        line-height: 216px;
     }
 }
 
