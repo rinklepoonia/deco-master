@@ -17,13 +17,19 @@
     --fc-darkpink: #8A3E74;
     --fc-green: #008000;
     --fc-black70: #4D4D4D;
+    --fc-blue: #010080;
     /* ===========bg-color=========== */
     --bg-green: #D2DA60;
     --bg-layerblack: #00000099;
+    --bg-boxbg: #EEEEEE;
 }
 
 .color-black70 {
     color: var(--fc-black70);
+}
+
+.color-blue {
+    color: var(--fc-blue);
 }
 
 .color-darkpink {
@@ -126,7 +132,7 @@
 }
 
 .lh-72 {
-    line-height: 72px;
+    line-height: 50px;
 }
 
 .lh-96 {
@@ -351,7 +357,6 @@
 
 .slick-dots li button:before {
     color: var(--fc-black);
-    /* font-size: 10px; */
 }
 
 .slick-dots li.slick-active button::before {
@@ -359,10 +364,10 @@
     font-size: 13px;
 }
 
-.gallery_smalIcon_position {
-    bottom: -8px;
+/* .gallery_smalIcon_position {
+    bottom: -16px;
     right: 50%;
-}
+} */
 
 .mt_42 {
     margin-top: 42px;
@@ -399,17 +404,10 @@
 .max-w-181 {
     max-width: 181px;
 }
-.max-w-194{
+
+.max-w-194 {
     max-width: 194px;
 }
-
-/* .ml_45 {
-    margin-left: 45%;
-} */
-
-/* .mr_18 {
-    margin-right: 18%;
-} */
 
 .mt_10 {
     margin-top: 8%;
@@ -421,13 +419,110 @@
     z-index: -1;
 }
 
-.gap {
-    column-gap: 20px;
-}
-
 .gap-r-30 {
     row-gap: 30px;
 }
+
+/* =================servise============ */
+.pt_60 {
+    padding-top: 60px;
+}
+
+.max-w-471 {
+    max-width: 471px;
+}
+
+.max-w-753 {
+    max-width: 502px;
+}
+
+.br_48 {
+    border-radius: 48px;
+}
+
+.blue_btn {
+    padding: 11px 34px;
+    background: var(--fc-blue);
+    border-radius: 4px;
+    border: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+
+.blue_btn:hover {
+    color: var(--fc-white);
+    z-index: 1;
+}
+
+.blue_btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--fc-black);
+    border-radius: 4px;
+    transition: 0.3s linear;
+    opacity: 0;
+    z-index: -1;
+}
+
+.blue_btn:hover::after {
+    opacity: 1;
+    left: 0%;
+}
+
+.our_servise_box {
+    max-width: 1774px;
+    min-height: 579px;
+    background: var(--bg-boxbg);
+    border-radius: 40px;
+    width: 100%;
+    z-index: -1;
+}
+
+.servise_box_position {
+    top: 22%;
+    right: 0;
+}
+
+.our_servise_box2 {
+    max-width: 1774px;
+    min-height: 600px;
+    background: var(--bg-boxbg);
+    border-radius: 40px;
+    width: 100%;
+    z-index: -1;
+}
+
+.servise_box_position2 {
+    top: 13%;
+    right: 0;
+}
+
+.our_servise_box3 {
+    max-width: 1774px;
+    min-height: 600px;
+    background: var(--bg-boxbg);
+    border-radius: 40px;
+    width: 100%;
+    z-index: -1;
+}
+
+.servise_box_position3 {
+    top: 13%;
+    right: 0;
+}
+
+.sevise-ellip-position {
+    top: 25%;
+    left: 13%;
+    z-index: -1;
+}
+
+
 
 @media (max-width:992px) {
     .overFlowHidden {
@@ -484,6 +579,17 @@
         line-height: 72px;
     }
 
+    .our_servise_box {
+        min-height: 615px;
+    }
+
+    .our_servise_box2 {
+        min-height: 615px;
+    }
+
+    .our_servise_box3 {
+        min-height: 615px;
+    }
 }
 
 @media (min-width:768px) {
@@ -503,6 +609,11 @@
     .lh-54 {
         line-height: 54px;
     }
+
+    .lh-72 {
+        line-height: 72px;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -530,11 +641,64 @@
     .border_gallery {
         padding: 0;
     }
+
+    .servise_box_position {
+        top: 33%;
+    }
+
+    .our_servise_box {
+        min-height: 368px;
+    }
+
+    .servise_box_position2 {
+        top: 13%;
+    }
+
+    .our_servise_box2 {
+        min-height: 368px;
+    }
+
+    .servise_box_position3 {
+        top: 22%;
+    }
+
+    .our_servise_box3 {
+        min-height: 368px;
+    }
 }
 
 @media (min-width:1200px) {
     .max-w-647 {
         max-width: 647px;
+    }
+
+    .max-w-753 {
+        max-width: 753px;
+    }
+
+    .our_servise_box {
+        min-height: 446px;
+    }
+
+    .servise_box_position {
+        top: 30%;
+    }
+
+    .our_servise_box2 {
+        min-height: 470px;
+    }
+
+    .servise_box_position2 {
+        top: 15%;
+    }
+
+    .our_servise_box3 {
+        min-height: 470px;
+    }
+
+    .servise_box_position3 {
+        /* top: 15%; */
+        top: 20%;
     }
 }
 
@@ -545,5 +709,29 @@
 
     .ml_202 {
         margin-left: 202px;
+    }
+
+    .servise_box_position {
+        top: 50%;
+    }
+
+    .our_servise_box {
+        min-height: 340px;
+    }
+
+    .servise_box_position2 {
+        top: 50%;
+    }
+
+    .our_servise_box2 {
+        min-height: 340px;
+    }
+
+    .servise_box_position3 {
+        top: 46%;
+    }
+
+    .our_servise_box3 {
+        min-height: 340px;
     }
 }
