@@ -522,6 +522,19 @@
     z-index: -1;
 }
 
+/* ===============team================ */
+.py_21 {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.team_bg_color {
+    background: var(--fc-blue);
+}
+
+.max-w-423 {
+    max-width: 423px;
+}
 
 
 @media (max-width:992px) {
@@ -707,8 +720,16 @@
         padding: 58px 44px;
     }
 
+    .min_h_900 {
+        min-height: 810px;
+    }
+
     .ml_202 {
         margin-left: 202px;
+    }
+
+    .mr_216 {
+        margin-right: 294px;
     }
 
     .servise_box_position {
@@ -733,5 +754,32 @@
 
     .our_servise_box3 {
         min-height: 340px;
+    }
+
+    .team2_position {
+        position: absolute;
+        top: 35%;
+        left: 31%;
+        z-index: 1;
+    }
+
+    .team4_position {
+        position: absolute;
+        top: 35%;
+        left: 66%;
+    }
+}
+
+@media (max-width:1440px) {
+    .d_flex {
+        display: flex;
+    }
+
+    .align_items_center {
+        align-items: center;
+    }
+
+    .flex_column {
+        flex-direction: column;
     }
 }
