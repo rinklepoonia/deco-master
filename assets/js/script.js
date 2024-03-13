@@ -6,11 +6,25 @@ menuIcon.addEventListener("click", function () {
     document.body.classList.toggle("overFlowHidden")
     document.querySelector(".menuIcon").classList.toggle("cross")
 })
+// back-to-top
+const topBtn = document.querySelector(".topBtn");
+const show = document.querySelector(".show");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 60) {
+        topBtn.classList.add("show");
+    } else {
+        topBtn.classList.remove("show");
+    }
+})
+topBtn.addEventListener("click", function () {
+    document.documentElement.scrollTop = 0;
+})
 
 // gallery-slider
 
 $('.galley-slider1').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
     autoplay: true,
@@ -26,7 +40,6 @@ $('.galley-slider1').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true,
                 autoplay: true,
             }
         },
@@ -36,7 +49,6 @@ $('.galley-slider1').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true,
                 autoplay: true,
             }
         },
@@ -46,14 +58,13 @@ $('.galley-slider1').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true,
                 autoplay: true,
             }
         }
     ]
 });
 $('.galley-slider2').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
     autoplay: true,
@@ -69,7 +80,6 @@ $('.galley-slider2').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true,
                 autoplay: true,
             }
         },
@@ -79,7 +89,6 @@ $('.galley-slider2').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true,
                 autoplay: true,
             }
         },
@@ -89,7 +98,6 @@ $('.galley-slider2').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true,
                 autoplay: true,
             }
         }
