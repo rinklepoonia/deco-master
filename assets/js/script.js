@@ -20,7 +20,6 @@ window.addEventListener("scroll", function () {
 topBtn.addEventListener("click", function () {
     document.documentElement.scrollTop = 0;
 })
-
 // gallery-slider
 
 $('.galley-slider1').slick({
